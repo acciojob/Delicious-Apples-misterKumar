@@ -1,1 +1,104 @@
 /* your code here */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #FFC107;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card button:hover {
+  background-color: #FF9800;
+}
+
+/* Specific Styles */
+
+.green-apple {
+  background-image: url("https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png");
+}
+
+.yellow-apple {
+  background-image: url("https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png");
+}
+
+.orange-apple {
+  background-image: url("https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png");
+}
+
+.red-apple {
+  background-image: url("https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png");
+}
+
+.green-apple img {
+  content: url("https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png");
+}
+
+.green-apple.half img {
+  content: url("https://res.cloudinary.com/john-mantas/image/upload/v1537303532/codepen/delicious-apples/half-apple.png");
+}
+
+.green-apple.flipped img {
+  content: url("https://res.cloudinary.com/john-mantas/image/upload/v1537303160/codepen/delicious-apples/green-apple-flipped.png");
+}
+
+.green-apple.top img {
+  content: url("https://res.cloudinary.com/john-mantas/image/upload/v1537303708/codepen/delicious-apples/apple-top.png");
+}
